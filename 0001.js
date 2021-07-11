@@ -1,8 +1,10 @@
 let buildArray = size => {
   let numbers = new Array(size);
+
   for (let i = 0; i < numbers.length; i++) {
     numbers[i] = i + 1;
   }
+
   return numbers;
 }
 

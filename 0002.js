@@ -1,5 +1,5 @@
 solve = n => {
-  let prevNum = 1, currNum = 2, tempNum = 0;
+  let prevNum = 1, currNum = 2;
   let total = 0;
 
   while (currNum < n) {
@@ -7,9 +7,7 @@ solve = n => {
       total += currNum;
     }
 
-    tempNum = currNum;
-    currNum += prevNum;
-    prevNum = tempNum;
+    [prevNum, currNum] = [currNum, prevNum + currNum]
   }
 
   return total;

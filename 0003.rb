@@ -1,5 +1,3 @@
-require 'benchmark'
-
 def prime? n
   for i in 2..(Math.sqrt(n).ceil)
     return false if n % i === 0
